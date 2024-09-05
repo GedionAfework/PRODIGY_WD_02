@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="image/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="switch">
+      <div class="switch-button" onclick="modeChange()"></div>
+    </div>
+    <div class="container">
+      <div class="watch">
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <span class="text min" id="minute">00&nbsp;:</span>
+            <span class="text sec" id="second">&nbsp;00&nbsp;:</span>
+            <span class="text mlsec" id="millisecond">&nbsp;00</span>
+          </div>
+        </div>
+        <div class="button-wrapper">
+          <button class="button reset-btn" id="reset">Reset</button>
+          <button class="button play-btn" id="play">Play</button>
+          <button class="button lap-btn" id="lap">Lap</button>
+        </div>
+      </div>
+      <ul class="laps" id="laps">
+        <button class="lap-clear-button clear-btn" id="clear"></button>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
